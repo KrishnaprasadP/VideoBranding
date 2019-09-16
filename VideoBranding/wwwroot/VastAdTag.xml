@@ -1,0 +1,38 @@
+﻿<VAST version="2.0">
+  <Ad id="static">
+    <InLine>
+      <AdSystem>Static VAST Template</AdSystem>
+      <AdTitle>VASTAdTag</AdTitle>
+      <!-- <Impression>http://example.com/pixel.gif</Impression> -->
+      <Creatives>
+        <Creative>
+          <Linear>
+            <Duration>00:00:09</Duration>
+            <TrackingEvents>
+              <Tracking event="start">http://example.com/pixel.gif</Tracking>
+            </TrackingEvents>
+            <VideoClicks>
+              <ClickThrough>http://www.jwplayer.com/</ClickThrough>
+              <!-- <ClickTracking>http://example.com/pixel.gif</ClickTracking> -->
+            </VideoClicks>
+            <MediaFiles>
+              <MediaFile type="video/mp4" bitrate="300" width="480" height="270">
+                https://localhost:44306/advideo.mp4
+              </MediaFile>
+            </MediaFiles>
+            <Icons>
+              <Icon program="AdChoices" height="16" width="16" xPosition="right" yPosition="top">
+                <StaticResource creativeType="image/png">
+                  https://example.com/adchoices-sm.png
+                </StaticResource>
+                <IconClicks>
+                  <IconClickThrough>https://sample-url.com</IconClickThrough>
+                </IconClicks>
+              </Icon>
+            </Icons>
+           </Linear>
+        </Creative>
+      </Creatives>
+    </InLine>
+  </Ad>
+</VAST>

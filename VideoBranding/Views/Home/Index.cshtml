@@ -23,7 +23,12 @@
     <script type='text/javascript'>
         jwplayer("myElement").setup({
             "file": "/samplevideo.mp4",            
-            "primary": "flash"
+            "primary": "flash",
+            "advertising": {
+                "client": "vast",
+                "tag": "https://localhost:44306/vastadtag.xml",
+                "admessage" : "AAAAAAAAAAAAAAAA"
+            }
         });
     </script>
 </div>
